@@ -1,0 +1,27 @@
+PODS:
+  - MLSModuleCenter (1.0.0):
+    - MLSModuleCenter/Header (= 1.0.0)
+    - MLSModuleCenter/Moudle (= 1.0.0)
+    - MLSModuleCenter/Route (= 1.0.0)
+    - MLSModuleCenter/Tools (= 1.0.0)
+  - MLSModuleCenter/Header (1.0.0)
+  - MLSModuleCenter/Moudle (1.0.0):
+    - MLSModuleCenter/Route
+  - MLSModuleCenter/Route (1.0.0):
+    - MLSModuleCenter/Header
+  - MLSModuleCenter/Tools (1.0.0):
+    - MLSModuleCenter/Moudle
+
+DEPENDENCIES:
+  - MLSModuleCenter (from `../`)
+
+EXTERNAL SOURCES:
+  MLSModuleCenter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MLSModuleCenter: 4fd0d741e06cb785b0180bf74e6ff0181a9b336a
+
+PODFILE CHECKSUM: 8698d5192c307d0a55fcdb36f47565cb8f524215
+
+COCOAPODS: 1.7.5

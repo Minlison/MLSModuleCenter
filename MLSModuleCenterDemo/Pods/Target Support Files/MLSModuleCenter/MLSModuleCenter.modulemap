@@ -1,0 +1,6 @@
+framework module MLSModuleCenter {
+  umbrella header "MLSModuleCenter-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "MLSModuleCenter",
+  "version": "1.0.0",
+  "summary": "模块化中心",
+  "description": "模块化中心，分离各个模块，注册，管理各个模块 route 调用",
+  "homepage": "https://www.minlison.cn",
+  "license": "MIT",
+  "authors": {
+    "Minlison": "yuanhang.1991@163.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/Minlison/MLSModuleCenter.git",
+    "tag": "1.0.0"
+  },
+  "documentation_url": "https://minlison.cn/article/mlsmodulecenter",
+  "static_framework": true,
+  "subspecs": [
+    {
+      "name": "Header",
+      "source_files": "Classes/*.h",
+      "public_header_files": "Classes/*.h"
+    },
+    {
+      "name": "Route",
+      "source_files": "Classes/Route/Core/**/*.{h,m}",
+      "public_header_files": "Classes/Route/Core/**/*.h",
+      "dependencies": {
+        "MLSModuleCenter/Header": [
+
+        ]
+      }
+    },
+    {
+      "name": "Moudle",
+      "source_files": "Classes/Moudle/**/*.{h,m}",
+      "public_header_files": "Classes/Moudle/**/*.h",
+      "dependencies": {
+        "MLSModuleCenter/Route": [
+
+        ]
+      }
+    },
+    {
+      "name": "Tools",
+      "source_files": "Classes/Tools/**/*.{h,m}",
+      "public_header_files": "Classes/Tools/**/*.h",
+      "dependencies": {
+        "MLSModuleCenter/Moudle": [
+
+        ]
+      },
+      "xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "MLSModuleCenterToolsEnable=1"
+      }
+    }
+  ]
+}
