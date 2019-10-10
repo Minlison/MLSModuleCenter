@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "Minlison" => "yuanhang.1991@163.com" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/Minlison/MLSModuleCenter.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/Minlison/MLSModuleCenter.git", :tag => "v#{s.version}" }
   s.documentation_url = "https://minlison.cn/article/mlsmodulecenter"
   s.static_framework = true
 #  s.default_subspecs = 'Moudle'
