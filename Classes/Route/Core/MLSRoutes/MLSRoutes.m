@@ -276,6 +276,7 @@ static NSString *MLSRoutesGlobalRoutesScheme;
     __block id routeObj = nil;
     [[self _routesControllerForURL:URL] routeURL:URL withParameters:parameters handler:^BOOL(NSMutableDictionary<NSString *,id> * _Nullable parameters, id  _Nonnull targetObj) {
         routeObj = targetObj;
+        return YES;
     }];
     return routeObj;
 }
