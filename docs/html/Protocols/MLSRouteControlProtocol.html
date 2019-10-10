@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MLSRouteControlProtocol Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MLSModuleCenter </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MinLison</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/routeScheme">routeScheme</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addRoute:handler:">- addRoute:handler:</option>
+		
+		<option value="//api/name/addRoute:handlerClass:">- addRoute:handlerClass:</option>
+		
+		<option value="//api/name/addRoute:scheme:handler:">- addRoute:scheme:handler:</option>
+		
+		<option value="//api/name/addRoute:scheme:handlerClass:">- addRoute:scheme:handlerClass:</option>
+		
+		<option value="//api/name/canHandleUrl:">- canHandleUrl:</option>
+		
+		<option value="//api/name/generateURLWithPattern:patternParamters:">- generateURLWithPattern:patternParamters:</option>
+		
+		<option value="//api/name/generateURLWithPattern:patternParamters:queryParameters:">- generateURLWithPattern:patternParamters:queryParameters:</option>
+		
+		<option value="//api/name/generateURLWithQueryParameters:">- generateURLWithQueryParameters:</option>
+		
+		<option value="//api/name/generateURLWithScheme:pattern:patternParamters:">- generateURLWithScheme:pattern:patternParamters:</option>
+		
+		<option value="//api/name/generateURLWithScheme:pattern:patternParamters:queryParameters:">- generateURLWithScheme:pattern:patternParamters:queryParameters:</option>
+		
+		<option value="//api/name/generateURLWithScheme:queryParameters:">- generateURLWithScheme:queryParameters:</option>
+		
+		<option value="//api/name/removeRoute:">- removeRoute:</option>
+		
+		<option value="//api/name/removeRoute:forScheme:">- removeRoute:forScheme:</option>
+		
+		<option value="//api/name/routeObjForURL:withParameters:">- routeObjForURL:withParameters:</option>
+		
+		<option value="//api/name/routeURL:">- routeURL:</option>
+		
+		<option value="//api/name/routeURL:handler:">- routeURL:handler:</option>
+		
+		<option value="//api/name/routeURL:withParameters:">- routeURL:withParameters:</option>
+		
+		<option value="//api/name/routeURL:withParameters:handler:">- routeURL:withParameters:handler:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MLSRouteControlProtocol Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MLSRouteControlProtocol.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/routeScheme" title="routeScheme"></a>
+	<h3 class="method-title"><code><a href="#//api/name/routeScheme">&nbsp;&nbsp;routeScheme</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>配置路由协议， 可自定义配置， 默认 bundleID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *routeScheme</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRouteControlProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addRoute:scheme:handlerClass:" title="addRoute:scheme:handlerClass:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addRoute:scheme:handlerClass:">&ndash;&nbsp;addRoute:scheme:handlerClass:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>注册控制器</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addRoute:(NSString *)<em>routePattern</em> scheme:(nullable NSString *)<em>scheme</em> handlerClass:(Class)<em>handlerClass</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>routePattern</code></th>
+						<td><p>路由地址</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scheme</code></th>
+						<td><p>urlScheme， 默认是 innerApp</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>handlerClass</code></th>
+						<td><p>接收路由的 Class</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRouteControlProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addRoute:handlerClass:" title="addRoute:handlerClass:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addRoute:handlerClass:">&ndash;&nbsp;addRoute:handlerClass:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addRoute:(NSString *)<em>routePattern</em> handlerClass:(Class)<em>handlerClass</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addRoute:scheme:handler:" title="addRoute:scheme:handler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addRoute:scheme:handler:">&ndash;&nbsp;addRoute:scheme:handler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>注册路由</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addRoute:(NSString *)<em>routePattern</em> scheme:(nullable NSString *)<em>scheme</em> handler:(nullable MLSRouteHandlerParamsCallBackBlock)<em>handlerBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>routePattern</code></th>
+						<td><p>路由地址</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scheme</code></th>
+						<td><p>urlScheme， 默认是 innerApp</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>handlerBlock</code></th>
+						<td><p>回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRouteControlProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addRoute:handler:" title="addRoute:handler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addRoute:handler:">&ndash;&nbsp;addRoute:handler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)addRoute:(NSString *)<em>routePattern</em> handler:(nullable MLSRouteHandlerParamsCallBackBlock)<em>handlerBlock</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeRoute:" title="removeRoute:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeRoute:">&ndash;&nbsp;removeRoute:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>移除注册路由</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeRoute:(nullable NSString *)<em>routePattern</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>routePattern</code></th>
+						<td><p>路由正则</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRouteControlProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeRoute:forScheme:" title="removeRoute:forScheme:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeRoute:forScheme:">&ndash;&nbsp;removeRoute:forScheme:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)removeRoute:(nullable NSString *)<em>routePattern</em> forScheme:(nullable NSString *)<em>scheme</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/routeURL:" title="routeURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/routeURL:">&ndash;&nbsp;routeURL:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>打开路由地址
+也可调用 [[UIApplication sharedApplication] openURL:url];</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)routeURL:(NSURL *)<em>routeURL</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>routeURL</code></th>
+						<td><p>路由地址</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRouteControlProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/routeURL:withParameters:" title="routeURL:withParameters:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/routeURL:withParameters:">&ndash;&nbsp;routeURL:withParameters:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>打开路由地址</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)routeURL:(NSURL *)<em>routeURL</em> withParameters:(nullable NSDictionary *)<em>paramters</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>routeURL</code></th>
+						<td><p>路由地址</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>paramters</code></th>
+						<td><p>附加参数, 最终会回调给 handleObj</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRouteControlProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/routeURL:handler:" title="routeURL:handler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/routeURL:handler:">&ndash;&nbsp;routeURL:handler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>打开路由地址</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)routeURL:(NSURL *)<em>routeURL</em> handler:(nullable MLSRouteHandleTargetCallBackBlock)<em>handlerBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>routeURL</code></th>
+						<td><p>路由地址</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>handlerBlock</code></th>
+						<td><p>回调函数</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>是否打开成功</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRouteControlProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/routeURL:withParameters:handler:" title="routeURL:withParameters:handler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/routeURL:withParameters:handler:">&ndash;&nbsp;routeURL:withParameters:handler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>打开路由地址</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)routeURL:(NSURL *)<em>routeURL</em> withParameters:(nullable NSDictionary *)<em>parameters</em> handler:(nullable MLSRouteHandleTargetCallBackBlock)<em>handlerBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>routeURL</code></th>
+						<td><p>路由地址</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>回调函数</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>handlerBlock</code></th>
+						<td><p>是否打开成功</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRouteControlProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/routeObjForURL:withParameters:" title="routeObjForURL:withParameters:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/routeObjForURL:withParameters:">&ndash;&nbsp;routeObjForURL:withParameters:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取路由结果对象</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)routeObjForURL:(NSURL *)<em>routeURL</em> withParameters:(nullable NSDictionary *)<em>parameters</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>routeURL</code></th>
+						<td><p>路由地址</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>路由参数</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRouteControlProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/canHandleUrl:" title="canHandleUrl:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/canHandleUrl:">&ndash;&nbsp;canHandleUrl:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否可以打开该地址</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)canHandleUrl:(NSURL *)<em>routeUrl</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>routeUrl</code></th>
+						<td><p>路由地址</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES/NO</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRouteControlProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/generateURLWithScheme:pattern:patternParamters:queryParameters:" title="generateURLWithScheme:pattern:patternParamters:queryParameters:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/generateURLWithScheme:pattern:patternParamters:queryParameters:">&ndash;&nbsp;generateURLWithScheme:pattern:patternParamters:queryParameters:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>调用此方法来拼接 urlpattern 和 parameters</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSURL *)generateURLWithScheme:(nullable NSString *)<em>scheme</em> pattern:(nullable NSString *)<em>pattern</em> patternParamters:(nullable NSArray *)<em>patternParamters</em> queryParameters:(nullable NSDictionary *)<em>queryParameters</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scheme</code></th>
+						<td><p>UrlScheme 默认 <a href="#//api/name/routeScheme">routeScheme</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pattern</code></th>
+						<td><p>url pattern 比如 @&ldquo;beauty/:id&rdquo;</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>patternParamters</code></th>
+						<td><p>一个数组，数量要跟 pattern 里的变量一致</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>queryParameters</code></th>
+						<td><p>一个字典，query取值</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回生成的URL String</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRouteControlProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/generateURLWithScheme:pattern:patternParamters:" title="generateURLWithScheme:pattern:patternParamters:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/generateURLWithScheme:pattern:patternParamters:">&ndash;&nbsp;generateURLWithScheme:pattern:patternParamters:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSURL *)generateURLWithScheme:(nullable NSString *)<em>scheme</em> pattern:(nullable NSString *)<em>pattern</em> patternParamters:(nullable NSArray *)<em>patternParamters</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/generateURLWithScheme:queryParameters:" title="generateURLWithScheme:queryParameters:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/generateURLWithScheme:queryParameters:">&ndash;&nbsp;generateURLWithScheme:queryParameters:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSURL *)generateURLWithScheme:(nullable NSString *)<em>scheme</em> queryParameters:(nullable NSDictionary *)<em>queryParameters</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/generateURLWithPattern:patternParamters:queryParameters:" title="generateURLWithPattern:patternParamters:queryParameters:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/generateURLWithPattern:patternParamters:queryParameters:">&ndash;&nbsp;generateURLWithPattern:patternParamters:queryParameters:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSURL *)generateURLWithPattern:(nullable NSString *)<em>pattern</em> patternParamters:(nullable NSArray *)<em>patternParamters</em> queryParameters:(nullable NSDictionary *)<em>queryParameters</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/generateURLWithPattern:patternParamters:" title="generateURLWithPattern:patternParamters:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/generateURLWithPattern:patternParamters:">&ndash;&nbsp;generateURLWithPattern:patternParamters:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSURL *)generateURLWithPattern:(nullable NSString *)<em>pattern</em> patternParamters:(nullable NSArray *)<em>patternParamters</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/generateURLWithQueryParameters:" title="generateURLWithQueryParameters:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/generateURLWithQueryParameters:">&ndash;&nbsp;generateURLWithQueryParameters:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSURL *)generateURLWithQueryParameters:(nullable NSDictionary *)<em>queryParameters</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 MinLison. All rights reserved. Updated: 2019-10-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
