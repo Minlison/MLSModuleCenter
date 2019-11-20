@@ -34,11 +34,12 @@
 + (void)generateRoutesHeaderToDir:(NSString *)dir {
     NSString *bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
     NSString *moudleName = [bundleIdentifier componentsSeparatedByString:@"."].lastObject.capitalizedString;
-    [self generateRoutesHeaderToDir:dir moudleName:moudleName];
+    [self generateRoutesHeaderToDir:dir headerName:moudleName];
 }
 
-+ (void)generateRoutesHeaderToDir:(NSString *)dir moudleName:(NSString *)moudleName {
-    [[self sharedInstance] generateRoutesHeaderToDir:dir moudleName:moudleName];
++ (void)generateRoutesHeaderToDir:(NSString *)dir headerName:(NSString *)headerName {
+    headerName = headerName?:@"MLS";
+    [[self sharedInstance] generateRoutesHeaderToDir:dir headerName:headerName];
 }
 
 - (void)createOrInsertMethodInterface:(NSString *)methodInterface toTarget:(NSString *)target {
@@ -59,7 +60,7 @@
     [array addObject:methodImp];
 }
 
-- (void)generateRoutesHeaderToDir:(NSString *)dir moudleName:(NSString *)moudleName {
+- (void)generateRoutesHeaderToDir:(NSString *)dir headerName:(NSString *)headerName {
     
     NSLog(@"===============BEGIN GENERATE ROUTES HEADERS ================");
     
@@ -140,14 +141,14 @@
     }];
     
     // 创建文件
-    NSMutableString *headerFileString = [[NSMutableString alloc] initWithFormat:@"// %@ Auto Create \n// Not Modify \n// Date: %@ \n\n",moudleName, NSDate.date];
+    NSMutableString *headerFileString = [[NSMutableString alloc] initWithFormat:@"// %@ Auto Create \n// Not Modify \n// Date: %@ \n\n",headerName, NSDate.date];
     [headerFileString appendFormat:@"#import <UIKit/UIKit.h>\n\n\n"];
-    [headerFileString appendFormat:@"#ifndef %@RouteHeader_h\n",moudleName];
-    [headerFileString appendFormat:@"#define %@RouteHeader_h\n\n\n\n",moudleName];
+    [headerFileString appendFormat:@"#ifndef %@RouteHeader_h\n",headerName];
+    [headerFileString appendFormat:@"#define %@RouteHeader_h\n\n\n\n",headerName];
     
     
-    NSMutableString *mFileString = [[NSMutableString alloc] initWithFormat:@"// %@ Auto Create \n// Not Modify \n// Date: %@\n\n",moudleName, NSDate.date];
-    [mFileString appendFormat:@"#import \"%@.h\"\n\n\n\n",moudleName];
+    NSMutableString *mFileString = [[NSMutableString alloc] initWithFormat:@"// %@ Auto Create \n// Not Modify \n// Date: %@\n\n",headerName, NSDate.date];
+    [mFileString appendFormat:@"#import \"%@RouteHeader.h\"\n\n\n\n",headerName];
     
     NSArray <NSString *>*keys = [self.targetImplementations.allKeys sortedArrayUsingSelector:@selector(compare:)];
     [keys enumerateObjectsUsingBlock:^(NSString * _Nonnull target, NSUInteger targetidx, BOOL * _Nonnull targetStop) {
@@ -166,15 +167,15 @@
         [mFileString appendFormat:@"@end\n\n"];
     }];
     
-    [headerFileString appendFormat:@"#endif // %@_h\n", moudleName];
+    [headerFileString appendFormat:@"#endif // %@_h\n", headerName];
     
     BOOL isDir = NO;
     BOOL isExist = [[NSFileManager defaultManager] fileExistsAtPath:dir isDirectory:&isDir];
     if (!isDir || !isExist) {
         [[NSFileManager defaultManager] createDirectoryAtPath:dir withIntermediateDirectories:YES attributes:nil error:nil];
     }
-    NSString *headerPath = [dir stringByAppendingPathComponent:[NSString stringWithFormat:@"%@RouteHeader.h", moudleName]];
-    NSString *impPath = [dir stringByAppendingPathComponent:[NSString stringWithFormat:@"%@RouteHeader.m", moudleName]];
+    NSString *headerPath = [dir stringByAppendingPathComponent:[NSString stringWithFormat:@"%@RouteHeader.h", headerName]];
+    NSString *impPath = [dir stringByAppendingPathComponent:[NSString stringWithFormat:@"%@RouteHeader.m", headerName]];
     NSError *error = nil;
     [headerFileString writeToFile:headerPath atomically:YES encoding:NSUTF8StringEncoding error:&error];
     [mFileString writeToFile:impPath atomically:YES encoding:NSUTF8StringEncoding error:&error];

@@ -38,11 +38,11 @@
     NSString *rootPath = [NSString stringWithFormat:@"%s", __FILE__];
     rootPath = [rootPath stringByReplacingOccurrencesOfString:[rootPath lastPathComponent] withString:@"Header"];
     BOOL isDir = NO;
-    if (![NSFileManager.defaultManager fileExistsAtPath:rootPath isDirectory:isDir] || !isDir) {
+    if (![NSFileManager.defaultManager fileExistsAtPath:rootPath isDirectory:&isDir] || !isDir) {
         [NSFileManager.defaultManager createDirectoryAtPath:rootPath withIntermediateDirectories:YES attributes:nil error:nil];
     }
     NSLog(@"%@",rootPath);
-    [MLSGenerateRouteHeaderTool generateRoutesHeaderToDir:rootPath moudleName:@"MLSTestMoudle"];
+    [MLSGenerateRouteHeaderTool generateRoutesHeaderToDir:rootPath headerName:nil];
 #endif
     
     [super application:application didFinishLaunchingWithOptions:launchOptions];
