@@ -155,6 +155,7 @@ typedef void (^MLSRouteUnMatchedURLHandlerBlock)(MLSRoutes *routes, NSURL *__nul
 + (BOOL)routeURL:(nullable NSURL *)URL withParameters:(nullable NSDictionary<NSString *, id> *)parameters handler:(nullable MLSRouteHandleTargetCallBackBlock)handlerBlock;
 /// 获取 route 的对象
 + (id)objectForURL:(nullable NSURL *)URL withParameters:(nullable NSDictionary<NSString *, id> *)parameters;
+- (id)objectForURL:(nullable NSURL *)URL withParameters:(nullable NSDictionary<NSString *, id> *)parameters;
 
 /// Routes a URL in a specific scheme, calling handler blocks (for patterns that match URL) until one returns YES.
 /// Additional parameters get passed through to the matched route block.

@@ -257,7 +257,7 @@ static NSString *MLSRoutesGlobalRoutesScheme;
 }
 
 - (BOOL)canRouteURL:(NSURL *)URL {
-    return [self _routeURL:URL withParameters:nil executeRouteBlock:NO handler:nil];
+    return [self routeURL:URL handler:nil];
 }
 
 + (BOOL)routeURL:(NSURL *)URL handler:(nullable MLSRouteHandleTargetCallBackBlock)handlerBlock {
@@ -265,26 +265,31 @@ static NSString *MLSRoutesGlobalRoutesScheme;
 }
 
 - (BOOL)routeURL:(NSURL *)URL handler:(nullable MLSRouteHandleTargetCallBackBlock)handlerBlock {
-    return [self _routeURL:URL withParameters:nil executeRouteBlock:YES handler:handlerBlock];
+    return [self routeURL:URL withParameters:nil handler:handlerBlock];
 }
 
 + (BOOL)routeURL:(NSURL *)URL withParameters:(nullable NSDictionary  * )parameters handler:(nullable MLSRouteHandleTargetCallBackBlock)handlerBlock {
     return [[self _routesControllerForURL:URL] routeURL:URL withParameters:parameters handler:handlerBlock];
 }
 
+- (BOOL)routeURL:(NSURL *)URL withParameters:(nullable NSDictionary  * )parameters handler:(nullable MLSRouteHandleTargetCallBackBlock)handlerBlock {
+    if (URL && ![self.scheme isEqualToString:URL.scheme]) {
+        return [[MLSRoutes _routesControllerForURL:URL] _routeURL:URL withParameters:parameters executeRouteBlock:YES handler:handlerBlock];
+    }
+    return [self _routeURL:URL withParameters:parameters executeRouteBlock:YES handler:handlerBlock];
+}
+
 + (id)objectForURL:(NSURL *)URL withParameters:(NSDictionary<NSString *,id> *)parameters {
+    return [[self _routesControllerForURL:URL] objectForURL:URL withParameters:parameters];
+}
+- (id)objectForURL:(NSURL *)URL withParameters:(NSDictionary<NSString *,id> *)parameters {
     __block id routeObj = nil;
-    [[self _routesControllerForURL:URL] routeURL:URL withParameters:parameters handler:^BOOL(NSMutableDictionary<NSString *,id> * _Nullable parameters, id  _Nonnull targetObj) {
+    [self routeURL:URL withParameters:parameters handler:^BOOL(NSMutableDictionary<NSString *,id> * _Nullable parameters, id  _Nonnull targetObj) {
         routeObj = targetObj;
         return YES;
     }];
     return routeObj;
 }
-
-- (BOOL)routeURL:(NSURL *)URL withParameters:(nullable NSDictionary  * )parameters handler:(nullable MLSRouteHandleTargetCallBackBlock)handlerBlock {
-    return [self _routeURL:URL withParameters:parameters executeRouteBlock:YES handler:handlerBlock];
-}
-
 
 
 #pragma mark - Private

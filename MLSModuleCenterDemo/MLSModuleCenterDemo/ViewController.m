@@ -42,7 +42,7 @@
 //    }];
 }
 - (void)testDefaultPath {
-    [self routeURL:[NSURL URLForRouteTestPathDefaultType:@"red"] withParameters:nil handler:^BOOL(NSMutableDictionary<NSString *,id> * _Nullable parameters, id targetObj) {
+    [MLSRoutes.globalRoutes routeURL:[NSURL URLForRouteTestPathDefaultType:@"red"] withParameters:nil handler:^BOOL(NSMutableDictionary<NSString *,id> * _Nullable parameters, id targetObj) {
         [self.navigationController pushViewController:targetObj animated:YES];
         return YES;
     }];
