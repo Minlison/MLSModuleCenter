@@ -11,7 +11,6 @@
 		1F360524234DC577006377DC /* MLSTestDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F360520234DC577006377DC /* MLSTestDefaultViewController.m */; };
 		1F360525234DC577006377DC /* MLSTestPathParamsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F360521234DC577006377DC /* MLSTestPathParamsViewController.m */; };
 		1F360526234DC577006377DC /* MLSTestMoudle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F360523234DC577006377DC /* MLSTestMoudle.m */; };
-		1F36052E234DC9FE006377DC /* MLSTestMoudleRouteHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F36052C234DC9FD006377DC /* MLSTestMoudleRouteHeader.m */; };
 		1F360531234DCC4A006377DC /* MLSTestSchemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F360530234DCC4A006377DC /* MLSTestSchemeViewController.m */; };
 		1FC4742E234DBDAA009D530D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4742D234DBDAA009D530D /* AppDelegate.m */; };
 		1FC47434234DBDAA009D530D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC47433234DBDAA009D530D /* ViewController.m */; };
@@ -19,6 +18,7 @@
 		1FC47439234DBDAC009D530D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FC47438234DBDAC009D530D /* Assets.xcassets */; };
 		1FC4743C234DBDAC009D530D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC4743A234DBDAC009D530D /* LaunchScreen.storyboard */; };
 		1FC4743F234DBDAC009D530D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4743E234DBDAC009D530D /* main.m */; };
+		F32AAA972385ACCD00FE11A2 /* MLSRouteHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F32AAA952385ACCD00FE11A2 /* MLSRouteHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,6 @@
 		1F360521234DC577006377DC /* MLSTestPathParamsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSTestPathParamsViewController.m; sourceTree = "<group>"; };
 		1F360522234DC577006377DC /* MLSTestDefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSTestDefaultViewController.h; sourceTree = "<group>"; };
 		1F360523234DC577006377DC /* MLSTestMoudle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSTestMoudle.m; sourceTree = "<group>"; };
-		1F36052C234DC9FD006377DC /* MLSTestMoudleRouteHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSTestMoudleRouteHeader.m; sourceTree = "<group>"; };
-		1F36052D234DC9FD006377DC /* MLSTestMoudleRouteHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSTestMoudleRouteHeader.h; sourceTree = "<group>"; };
 		1F36052F234DCC4A006377DC /* MLSTestSchemeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLSTestSchemeViewController.h; sourceTree = "<group>"; };
 		1F360530234DCC4A006377DC /* MLSTestSchemeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLSTestSchemeViewController.m; sourceTree = "<group>"; };
 		1FC47429234DBDAA009D530D /* MLSModuleCenterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLSModuleCenterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +43,8 @@
 		51C988FB855689689B03D0DD /* Pods-MLSModuleCenterDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLSModuleCenterDemo.release.xcconfig"; path = "Target Support Files/Pods-MLSModuleCenterDemo/Pods-MLSModuleCenterDemo.release.xcconfig"; sourceTree = "<group>"; };
 		710DD3FF09E68EBA85A1EA06 /* Pods-MLSModuleCenterDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLSModuleCenterDemo.debug.xcconfig"; path = "Target Support Files/Pods-MLSModuleCenterDemo/Pods-MLSModuleCenterDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E1A0DDB71D7051AF72B665AB /* Pods_MLSModuleCenterDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLSModuleCenterDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32AAA952385ACCD00FE11A2 /* MLSRouteHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSRouteHeader.m; sourceTree = "<group>"; };
+		F32AAA962385ACCD00FE11A2 /* MLSRouteHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSRouteHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +85,8 @@
 		1F36052B234DC9FD006377DC /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				1F36052D234DC9FD006377DC /* MLSTestMoudleRouteHeader.h */,
-				1F36052C234DC9FD006377DC /* MLSTestMoudleRouteHeader.m */,
+				F32AAA962385ACCD00FE11A2 /* MLSRouteHeader.h */,
+				F32AAA952385ACCD00FE11A2 /* MLSRouteHeader.m */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -243,11 +243,11 @@
 				1F360531234DCC4A006377DC /* MLSTestSchemeViewController.m in Sources */,
 				1F360526234DC577006377DC /* MLSTestMoudle.m in Sources */,
 				1FC47434234DBDAA009D530D /* ViewController.m in Sources */,
-				1F36052E234DC9FE006377DC /* MLSTestMoudleRouteHeader.m in Sources */,
 				1F360525234DC577006377DC /* MLSTestPathParamsViewController.m in Sources */,
 				1F360524234DC577006377DC /* MLSTestDefaultViewController.m in Sources */,
 				1FC4742E234DBDAA009D530D /* AppDelegate.m in Sources */,
 				1FC4743F234DBDAC009D530D /* main.m in Sources */,
+				F32AAA972385ACCD00FE11A2 /* MLSRouteHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

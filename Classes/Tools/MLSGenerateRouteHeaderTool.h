@@ -21,9 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
  生成路由参数头文件
 
  @param dir 路径
- @param moudleName 模块名
+ @param headerName 头文件名
  */
-+ (void)generateRoutesHeaderToDir:(NSString *)dir moudleName:(NSString *)moudleName;
++ (void)generateRoutesHeaderToDir:(NSString *)dir headerName:(NSString *)headerName;
 @end
 
 NS_ASSUME_NONNULL_END
