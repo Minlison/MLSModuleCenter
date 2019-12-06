@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "MLSModuleCenter"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "模块化中心"
   s.description  = <<-DESC
                     模块化中心，分离各个模块，注册，管理各个模块 route 调用
